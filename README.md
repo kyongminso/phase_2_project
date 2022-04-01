@@ -28,11 +28,21 @@ All of our data came from a csv dataset that was provided for us from the county
 When working on this project, we used two different types of modeling: predictive modeling and inferential modeling. 
 
 
+
+### Simple Linear Regression 
+The 'sqft_living' variable had the highest correlation with price. This would be a great option for our first simple linear regression. 
+
+
+
 ### Inferential Models
 
 
 Our target variable was price and the graphs below show us the correlation between the different features and the target. 
 
+
+<img src="Images/sqft_living_regplot.png">
+
+The bigger your house is, the higher the price of the home will be. 
 
 <img src="Images/bathroom_bar.png">
 
@@ -41,11 +51,6 @@ Looking at this graph, as the number of bathrooms increases, so does the price o
 <img src="Images/sqft_living15_regplot.png">
 
 The bigger your neighbor's houses are, the price of the houses will increase. 
-
-<img src="Images/sqft_living_regplot.png">
-
-The bigger your house is, the higher the price of the home will be. 
-
 
 
 <img src="Images/view_bar.png">
@@ -74,13 +79,17 @@ We measured the success of our final model with these statistics:
 - Coefficient of Determination (R-Squared) = .86
 - Root Mean Squared Error = ~ $132,000
 
+
+
+
+
 #### What does this mean?
 ---
 - 86% of the variance in the dependent variable is explained by the independent variable in our model.
 - Our prediction will on average be off about $132,000. 
  
 
-<img src="https://github.com/kyongminso/phase_2_project/raw/main/Images/preds_actual_regplot.png">
+<img src=https://github.com/kyongminso/phase_2_project/raw/main/Images/preds_actual_regplot.png>
 
 We see when we plot predicted value vs actual values the scatter plot clusters around the line of best fit, which has a slope of almost, nearly one. This tells us that our predicted values were close to our actual values. 
 
