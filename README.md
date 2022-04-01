@@ -134,15 +134,27 @@ If you have a waterfront view home, it will most likely drive up the value of yo
 
 
 
+
+
+# Conclusion 
 ## Recommendations 
 -------
+
 We recommend you explore these 3 points to consider for your benefit: 
-- Use our model to accurately price the current inventory. 
-- Use our model to find undervalued homes. 
-- Use the model to find the best features to include in new home builds. 
+1. Use our model to accurately price the current inventory.  
+- The housing market is inefficient. Often, there are multiple bids for one ask.
+- Houses are priced sometimes at an arbritrary matter due to emotion and sentimentality. 
+- Our Model forgoes these drawbacks and provides data-backed pricing tool.
+2. Use our model to find undervalued homes.
+- When growing portfolio, it is cruxcial for new acuisition to be proftiibale. 
+- Our model offers an accurate listing price, allowing the stakeholder to acquire undervalued properties which can be sold for a profit. 
+3.  Use the model to find the best features to include in new home builds. 
+- When growing the porfolio through constructing new homes, our model accurately depicts the impact that the above featuires will have on the price. 
+- This steers the stakeholder into the proper direction. This allows the stakeholder to make better choices in regards to the house features, which they will include in the new builds. 
 
-
-
+Overall, all the model building and data cleaning gave us the RMSE value of about $132,000. The model can be more precise with a lower RMSE, but the model is accurate in that it will predict the price within the range. 
+Also, as seen by the qq plot, the linearity assumption is violated. With further data collection and research, the model can be improved. 
+The focus should be on square foot living because we saw that, that was the highest correlated with the price. 
 
 ## For more information
 ---
