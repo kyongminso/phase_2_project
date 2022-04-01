@@ -80,7 +80,7 @@ We measured the success of our final model with these statistics:
 - Our prediction will on average be off about $132,000. 
  
 
-<img src="preds_actual_regplot.png">
+<img src="https://github.com/kyongminso/phase_2_project/raw/main/Images/preds_actual_regplot.png">
 
 We see when we plot predicted value vs actual values the scatter plot clusters around the line of best fit, which has a slope of almost, nearly one. This tells us that our predicted values were close to our actual values. 
 
