@@ -33,11 +33,47 @@ When working on this project, we used two different types of modeling: predictiv
 ### Inferential Models
 
 
+Our target variable was price and the graphs below show us the correlation between the different features and the target. 
+
+
+<img src="Images/bathroom_bar.png">
+
+Looking at this graph, as the number of bathrooms increases, so does the price of the home. 
+
+<img src="Images/sqft_living15_regplot.png">
+
+The bigger your neighbor's houses are, the price of the houses will increase. 
+
+<img src="Images/sqft_living_regplot.png">
+
+The bigger your house is, the higher the price of the home will be. 
+
+
+
+<img src="Images/view_bar.png">
+
+The better the view, the higher the price of the home will be. 
+
+
+
+<img src="Images/waterfront_bar.png">
+
+If you have a waterfront view home, it will most likely drive up the value of your home. 
 
 ### Predictive Models
 
 Using the lowest error and the highest accuracy, predictive models are supposed to give us the most accurate model to predict our target. 
 
+We measured the success of our final model with these statistics: 
+
+- Coefficient of Determination (R-Squared) = .86
+- Root Mean Squared Error = ~ $132,000
+
+#### What does this mean?
+---
+- We can account for 86% of the error with our final prediction model.
+- Our prediction will on average be off about $132,000. 
+ 
 ## Recommendations 
 -------
 We reccomend you explore these 3 points to consider for your benefit: 
