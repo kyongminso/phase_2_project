@@ -30,6 +30,10 @@ When working on this project, we used two different types of modeling: predictiv
 
 
 ### Simple Linear Regression 
+
+
+<img src= "https://github.com/kyongminso/phase_2_project/raw/main/Images/heatmap.png">
+
 The 'sqft_living' variable had the highest correlation with price. This would be a great option for our first simple linear regression. 
 
 
