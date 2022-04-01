@@ -36,40 +36,25 @@ When working on this project, we used two different types of modeling: predictiv
 
 <img src= "https://github.com/kyongminso/phase_2_project/raw/main/Images/heatmap.png">
 
-The 'sqft_living' variable had the highest correlation with price. This would be a great option for our first simple linear regression. 
+The 'sqft_living' variable had the highest correlation with price. This would be a great option for our first simple linear regression. The Pearson Correlation Coefficient of sq_ft living compared to price is .7. We can consider values .7 and above to be a significant linear correlation between two variables.
+
+## Train-Test Split 
+
+We performed a train-test split with:  y = target and x= housing features.  
+We performed imputations to address the null values and properly scaled the data. We set up a dummy regressor to use as our first baseline comparison. Our first simple model outperformed the dummy regressor. For our train data, it gave us a value of .44 which means there is room for significant improvement. 
 
 
 
-### Inferential Models
+## Multiple Linear Regression 
+Adding multiple feautures to our model allows us to more accurately predict the price. This adds complexity to the model, however, we have to be cautious that we aren't over complicating it. This allows us to determine the variance of the model as we progress through our iteration, as well as determing the relative contribution of each feature to the price. 
+
+## Final Predictive Model
+
+### mlr_9
+After multiple iterations, we created our final predictive model which gave us a train R-Squared value of .854 and gave us an test R-Squared  of .859 which are similar, so it was neither over fit or underfit. Additionally, the RMSE 131,810 which is our lowest error of all the models showing that this was the most accurate model for predicitng y (housing price)
 
 
-Our target variable was price and the graphs below show us the correlation between the different features and the target. 
-
-
-<img src="Images/sqft_living_regplot.png">
-
-The bigger your house is, the higher the price of the home will be. 
-
-<img src="Images/bathroom_bar.png">
-
-Looking at this graph, as the number of bathrooms increases, so does the price of the home. 
-
-<img src="Images/sqft_living15_regplot.png">
-
-The bigger your neighbor's houses are, the price of the houses will increase. 
-
-
-<img src="Images/view_bar.png">
-
-The better the view, the higher the price of the home will be. 
-
-
-
-<img src="Images/waterfront_bar.png">
-
-If you have a waterfront view home, it will most likely drive up the value of your home. 
-
-### Predictive Models
+### Predictive Model
 
 Our top predictive models uses the following features: 
 - Sq.ft. living 
@@ -82,27 +67,57 @@ Our top predictive models uses the following features:
 
 We measured the success of our final model with these statistics: 
 
-- Coefficient of Determination (R-Squared) = .86
+- Coefficient of Determination (R-Squared) =  .854
 - Root Mean Squared Error = ~ $132,000
-
-
 
 
 
 #### What does this mean?
 ---
-- 86% of the variance in the dependent variable is explained by the independent variable in our model.
+- 85% of the variance in the dependent variable is explained by the independent variable in our model.
 - Our prediction will on average be off about $132,000. 
  
 
 <img src=https://github.com/kyongminso/phase_2_project/raw/main/Images/preds_actual_regplot.png>
 
-We see when we plot predicted value vs actual values the scatter plot clusters around the line of best fit, which has a slope of almost, nearly one. This tells us that our predicted values were close to our actual values. 
+We see when we plot predicted value vs. actual values the scatter plot clusters around the line of best fit, which has a slope of almost, nearly one. This tells us that our predicted values were close to our actual values. 
+
+## Inferential Model
+
+### mlr_10 (unscaled)
+The purpose of Inferential Model is to find the relationship between the price and the features, and see how the relationship can affect their values. We chose mlr_10 unscaled as our inferential model. The inferential model uses the exact same features as our predictive model except that it is not scaled and we didn't use the log of the price. Although it provides lower R-squared values of .792 for our train, and .792 for test, we can still see that we are not overfitting or underfitting. The residuals show homoskedasticity, a normal curve, and qq plot that breaks one assumption. The Durbin Watson score is 1.96 which is close to 2, indicating minimal auto correlation. 
+
+Our target variable was price and the graphs below show us the correlation between the different features and the target. 
+
+
+<img src="Images/sqft_living_regplot.png">
+
+The bigger your house is, the higher the price of the home will be. 
+
+
+<img src="Images/sqft_living15_regplot.png">
+
+The bigger your neighbor's houses are, the price of the houses will increase. 
+
+
+<img src="Images/bathroom_bar.png">
+
+Looking at this graph, as the number of bathrooms increases, so does the price of the home. 
 
 
 
-## Inferential Models 
-The purpose of Inferential Model is to find the relationship between the price and the features, and see how the relationship can affect their values. 
+
+<img src="Images/view_bar.png">
+
+The better the view, the higher the price of the home will be. 
+
+
+
+<img src="Images/waterfront_bar.png">
+
+If you have a waterfront view home, it will most likely drive up the value of your home. 
+
+
 
 - $170 increase in price per 1 sq ft
 - $61 increase in price per 1 sq feet in nearest 15 neighbors
@@ -112,6 +127,11 @@ The purpose of Inferential Model is to find the relationship between the price a
 - $15, 880 increase in price if fair view 
 - $101,400 increase in price if good view 
 - $258,900 increase in excellent view  
+
+
+
+
+
 
 
 ## Recommendations 
