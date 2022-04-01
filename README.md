@@ -128,8 +128,7 @@ If you have a waterfront view home, it will most likely drive up the value of yo
 - $101,400 increase in price if good view 
 - $258,900 increase in excellent view  
 
-
-
+<img src= https://github.com/kyongminso/phase_2_project/raw/main/Images/Phase%202%20Presentation.png>
 
 
 
