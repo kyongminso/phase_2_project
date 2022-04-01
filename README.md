@@ -119,15 +119,6 @@ If you have a waterfront view home, it will most likely drive up the value of yo
 
 
 
-- $170 increase in price per 1 sq ft
-- $61 increase in price per 1 sq feet in nearest 15 neighbors
-- $9,344 increase in price 1 bathroom increase
-- $516,600 increase in price if it is waterfront
-- $73,020 Decrease in price if no view
-- $15, 880 increase in price if fair view 
-- $101,400 increase in price if good view 
-- $258,900 increase in excellent view  
-
 <img src= https://github.com/kyongminso/phase_2_project/raw/main/Images/Phase%202%20Presentation.png>
 
 
